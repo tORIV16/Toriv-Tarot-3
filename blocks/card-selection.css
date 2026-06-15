@@ -1,0 +1,72 @@
+.card-selection__container {
+    width: 95%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.card-selection__card {
+    width: 75px;
+    height: 120px;
+    box-sizing: border-box;
+    box-shadow: 0 0 2px white;
+    cursor: pointer;
+    border-radius: 3px;
+    opacity: 0.95;
+    font-family: Carima;
+    color:white;
+    
+}
+
+.card-selection__card:hover {
+    box-shadow: 0 0 5px gold;
+}
+
+.wip {
+    opacity: 0.5;
+}
+
+.card-selection__card--emerald {
+    border: 2px solid green;
+    background-image: linear-gradient(45deg, green, lime, green);
+}
+
+.card-selection__card--emerald:hover {
+    border: 2px solid rgb(0, 168, 0);
+    background-image: linear-gradient(45deg, rgb(0, 168, 0), rgb(162, 255, 162), rgb(0, 168, 0));
+}
+
+.card-selection__card--emerald:active {
+    border: 2px solid rgb(16, 227, 16);
+    background-image: linear-gradient(45deg, rgb(16, 227, 16), rgb(207, 255, 207), rgb(16, 227, 16));
+}
+
+.card-selection__card--gold {
+    border: 2px solid rgb(160, 142, 0);
+    background-image: linear-gradient(45deg, rgb(160, 142, 0), rgb(255, 255, 0), rgb(160, 142, 0));
+}
+
+.card-selection__card--gold:hover {
+    border: 2px solid rgb(196, 173, 0);
+    background-image: linear-gradient(45deg, rgb(196, 173, 0), rgb(255, 255, 124), rgb(196, 173, 0));
+}
+
+.card-selection__card--gold:active {
+    border: 2px solid rgb(245, 216, 0);
+    background-image: linear-gradient(45deg, rgb(245, 216, 0), rgb(255, 255, 200), rgb(245, 216, 0));
+}
+
+.card-selection__card--diamond {
+    border: 2px solid rgb(24, 168, 168);
+    background-image: linear-gradient(45deg, rgb(24, 168, 168), rgb(99, 252, 255), rgb(24, 168, 168));
+}
+
+.card-selection__card--diamond:hover {
+    border: 2px solid rgb(29, 209, 209);
+    background-image: linear-gradient(45deg, rgb(29, 209, 209), rgb(172, 254, 255), rgb(29, 209, 209));
+}
+
+.card-selection__card--diamond:active {
+    border: 2px solid rgb(53, 246, 246);
+    background-image: linear-gradient(45deg, rgb(53, 246, 246), rgb(210, 254, 255), rgb(53, 246, 246));
+}

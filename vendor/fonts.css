@@ -1,0 +1,13 @@
+@font-face {
+    font-family: "Carima";
+    font-style: normal;
+    font-weight: 400;
+    src: url(./fonts/carima.ttf);
+}
+
+@font-face {
+    font-family: "BadUnicorn";
+    font-style: normal;
+    font-weight: 400;
+    src: url(./fonts/BadUnicornDemoRegular-BVWx.ttf);
+}

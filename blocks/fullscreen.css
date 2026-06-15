@@ -1,0 +1,93 @@
+#fullscreen-area {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 1000;
+    animation: appear 0.25s ease-in;
+}
+
+.card-focus__container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.card-focus__exit-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 0;
+    background: #19023561;
+    border: none;
+    cursor: pointer;
+    box-sizing: border-box;
+    box-shadow: inset 0 0 250px black;
+}
+
+.card-focus__main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-sizing: border-box;
+    max-width: 320px;
+    margin: 0 auto;
+    height: 100%;
+    gap: 10px;
+
+}
+
+.card-focus__exit-button {
+    z-index: 1;
+    align-self: end;
+    margin: 0 20px;
+    background: #ffffff44;
+    border: none;
+    box-sizing: border-box;
+    border-radius: 50%;
+    width: 50px;
+    height: 30px;
+    cursor: pointer;
+    color: white;
+    font-family: Carima;
+    text-align: center;
+    font-size: 1.5em;
+}
+.card-focus__exit-button img {
+    width: 30px;
+    height: 30px;
+    fill: gold;
+}
+
+.card-focus__exit-button:hover {
+    color: rgb(255, 255, 191);
+    background-color: rgba(255, 217, 0, 0.475);
+    box-shadow: 0 0 3px gold;
+
+}
+
+.card-focus__card {
+    filter: saturate(150%);
+    max-height: 75%;
+    border: 2px solid white;
+    box-sizing: border-box;
+    box-shadow: 0 0 3px white;
+    border-radius: 10px;
+}
+
+.card-focus__details {
+    z-index: 1;
+    text-wrap: wrap;
+    box-sizing: border-box;
+    font-family: Carima;
+    color: white;
+    background: #444444aa;
+    padding: 5px;
+    border-radius: 10px;
+    border: 2px solid white;
+    box-shadow: 0 0 3px white,
+            inset 0 0 3px black;
+}

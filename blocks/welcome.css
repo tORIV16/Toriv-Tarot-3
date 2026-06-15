@@ -1,0 +1,56 @@
+.welcome-title__container {
+    display: flex;
+    flex-direction: column;
+    min-height: 370px;
+    justify-content: space-between;
+}
+
+.welcome-title {
+    text-align: center;
+    font-family: BadUnicorn;
+    color: white;
+    padding-bottom: 15px;
+    font-size: 2.5em;
+    background-image: radial-gradient(#ffffff44, transparent, #ffffff44, transparent, transparent);
+    border-radius: 50%;
+    box-shadow: 0 0 10px gold,
+            inset 0 0 5px white;
+}
+
+.welcome-title--small {
+    font-size: 0.5em;
+}
+
+.welcome-title__deco {
+    background-image: url(../images/thefool-rotate.gif);
+    background-position: center;
+    background-size:cover;
+    background-repeat: no-repeat;
+    width: 200px;
+    height: 200px;
+    margin: -20px auto;
+    opacity: 0.8;
+}
+
+.welcome-title__button {
+    justify-self: flex-end;
+    padding: 10px 0;
+    background-color: purple;
+    border: 5px outset indigo;
+    box-shadow: 0 0 2px white;
+    color: white;
+    border-radius: 15px;
+}
+
+        .welcome-title__button:hover {
+            box-shadow: 0 0 5px yellow;
+            cursor: pointer;
+            background-color: pink;
+            color: indigo;
+        }
+
+                .welcome-title__button:active {
+                    border: 5px inset indigo;
+                    background-color: rgb(163, 108, 117);
+                    box-shadow: 0 0 15px gold;
+                }

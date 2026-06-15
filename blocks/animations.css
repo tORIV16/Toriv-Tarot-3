@@ -1,0 +1,100 @@
+@keyframes pulse-one {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.05);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes appear {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes disapear {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes blinking {
+    0% {
+        visibility: visible;
+    }
+
+    49% {
+        visibility: visible;
+    }
+
+    50% {
+        visibility: hidden;
+    }
+
+    99% {
+        visibility: hidden;
+    }
+
+    100% {
+        visibility: visible;;
+    }
+}
+
+@keyframes breath {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+
+    40% {
+        opacity: 0;
+    }
+
+    50% {
+        transform: scale(2.5);
+    }
+
+    60% {
+        opacity: 0;
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes arriving {
+    0% {
+        transform: translate(0, -100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translate(0, 0);
+        opacity: 1;
+    }
+}
+
+@keyframes arriving-reversedside {
+    0% {
+        transform: translate(0, -100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translate(0, 0) rotate(-180deg);
+        opacity: 1;
+        ;
+    }
+}

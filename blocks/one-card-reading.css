@@ -1,0 +1,162 @@
+.one-card-reading__container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.one-card-reading__header {
+    font-family: Carima;
+    font-size: 1.5em;
+    color: white;
+    text-shadow: 0 0 2px gold;
+    border: 1px solid gold;
+    border-radius: 50%;
+    box-shadow: 0 0 10px gold,
+            inset 0 0 10px gold; 
+}
+
+.one-card-reading__card {
+    width: 33%;
+    margin: 10px auto;
+    background: none;
+    border: none;
+}
+
+.one-card-reading__card-image {
+    filter: saturate(150%);
+    width: 100%;
+    border: 2px solid white;
+    box-shadow: 0 0 10px white;
+    border-radius: 6.66px;
+}
+
+.one-card-reading__card-image:hover {
+    filter:brightness(150%);
+    border: 2px solid rgb(255, 245, 172);
+    box-shadow: 0 0 15px gold;
+    cursor: pointer;
+}
+
+.one-card-reading__card-image:active {
+    filter:brightness(200%);
+    border: 2px solid rgb(255, 230, 43);
+    box-shadow: 0 0 20px gold;
+}
+
+.one-card-reading__card-details {
+    background-image: 
+        radial-gradient(
+            #ffffff80, transparent, #ffffff80, transparent, #ffffff80, transparent, #ffffff80, transparent
+        ),
+        radial-gradient(
+           at top, white, transparent
+        )
+    ;
+    background-color: rgba(192, 192, 192, 0.5);
+    box-shadow: 0 -10px 20px white,
+                0 0 5px white,
+            inset 0 0 5px white;
+    margin: -20px 5% 0;
+    padding: 15px;
+    border-radius: 50%;
+    font-family: Carima;
+}
+
+.one-card-reading__card-details--name, .one-card-reading__card-details--isreversed {
+    color: white;
+    text-shadow: 0 0 3px black;
+}
+
+.one-card-reading__card-details--keywords {
+    font-size: 0.75em;
+}
+
+.one-card-reading__card-details--description {
+    font-size: 0.5em;
+}
+.one-card-reading__card-details--description::before {
+    content: '"'
+}
+
+.one-card-reading__card-details--description::after {
+    content: '"'
+}
+.one-card-reading__card-insight {
+    position: relative;
+    box-sizing: border-box;
+    border: 7px outset red;
+    box-shadow: 0 3px 3px #00000055,
+                0 -1px 2px white,
+            inset 0 0 5px #000000ff;
+    border-radius: 30%;
+    margin: 15px 2%;
+    padding: 15px 20px 30px;
+    font-family: BadUnicorn;
+    font-size: 1.5em;
+    color: white;
+}
+
+.one-card-reading__card-insight--background__container { 
+    position: absolute;
+    overflow: hidden;
+    border-radius: 30%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0.25;
+    z-index: -1;
+}
+
+.one-card-reading__card-insight--background {
+    width: 100%;
+    height: 100%;
+    transform: rotate(20deg) scale(2);
+    background:
+        radial-gradient(
+            pink,
+            pink 15%,
+            transparent 15%,
+            transparent
+        )
+    ;
+    background-color: #222222ff;
+    background-repeat: repeat;
+    background-position: top left;
+    background-attachment: fixed;
+    background-size: 0.25em 0.25em;
+
+
+}
+
+.one-card-reading__card-insight--speaker {
+    background-color: rgb(234, 255, 229);
+    text-shadow: 0 0 2px black;
+    font-family: BadUnicorn;
+    font-size: 0.75em;
+    padding: 2px 15px;
+    box-sizing: border-box;
+    border: 2px solid red;
+    border-radius: 25px;
+    position: absolute;
+    top: -15px;
+    left: 5px;
+}
+
+.one-card-reading__card-insight p {
+    margin-bottom: 10px;
+}
+
+.one-card-reading__card-insight--fortune-insight {
+    font-size: 1.5em;
+    margin: 5px auto;
+}
+
+.one-card-reading__card-insight--fortune-insight::before {
+    content: '"'
+}
+
+.one-card-reading__card-insight--fortune-insight::after {
+    content: '."'
+}

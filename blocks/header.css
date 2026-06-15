@@ -1,0 +1,53 @@
+
+
+.header {
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.header__container {
+    box-sizing: border-box;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+    z-index: 9999;
+}
+
+.header__logo {
+    background-color: rgba(16, 22, 193, 0.5);
+    border-radius: 0 0 50px 50px;
+    text-align: center;
+    box-shadow: 0 5px 10px white,
+            inset 0 -5px 5px white;
+}
+
+.header__logo-text {
+    font-family: Carima, 'Times New Roman', Times, serif;
+    font-size: 1em;
+    padding: 1% 0 4%;
+    color: white;
+    text-shadow: 0 0 5px gold,
+                -1px -1px purple,
+                1px 1px red,
+                -1px 1px yellow,
+                1px -2px blue,
+                -2px 3px purple;
+    opacity: 1;
+    text-wrap: nowrap;
+}
+
+.header__logo-text:hover {
+    animation: pulse-one 1s infinite ease-in-out;
+    color: rgb(255, 246, 197);
+    text-shadow: 0 0 5px white,
+                -1px -1px orange,
+                1px 1px green,
+                -1px 1px purple,
+                1px -2px red,
+                -2px 3px yellow;
+    cursor: pointer;
+}

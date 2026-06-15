@@ -1,0 +1,19 @@
+.backdrop__container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+}
+.backdrop {
+    position: sticky;
+    background-image: url(../images/space-backdrop.png);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+    mask-image: linear-gradient(to top, transparent, lightblue);
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}

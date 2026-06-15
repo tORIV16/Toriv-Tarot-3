@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Toriv's Tarot App</title>
+        <meta name="description" content="This Is Toriv's Tarot App.">
+        <meta name="author" content="Victor Juarez">
+        <meta name="keywords" content="project, Toriv, Tarot">
+        <link rel="stylesheet" href="./pages/index.css">
+        <link rel="fontsheet" href="./vendor/fonts.css">
+        <link rel="icon" href="favicon.ico">
+    </head>
+    <!--      //----------- REMEMBER 360px MAX-WIDTH ----------- //       --> 
+    <!--      // ----------- MOBILE FIRST PRIORITY ------------ //       --> 
+    <body class="page">
+
+        <section id="fullscreen-area" class="is__not-visible">
+
+        </section>
+
+        <div class="backdrop__container">
+            <div class="backdrop"></div>
+        </div>
+        <header class="header">
+            <div class="header__container">
+                <div class="header__logo">
+                    <h1 class="header__logo-text">✨Toriv's Magical World✨</h1>
+                </div>
+            </div>
+        </header>
+        
+    <!-- --------------------------- MAIN -------------------------------- -->
+        <main class="main">
+
+            <section  id="content-area">
+
+            </section>
+            
+
+        </main>
+
+        <footer>
+
+        </footer>
+    <!-- --------------------------- TEMPLATES ------------------------------ -->
+        <template id="welcome-title-template">
+            <div class="welcome-title__container">                
+                <h2 class="welcome-title">
+                    <span class="welcome-title--small">Welcome to</span><br>
+                    Snoopy's<br>Fortune Shop
+                </h2>
+                <div class="welcome-title__deco"></div>
+                <button type="button" class="welcome-title__button">Clique-moi !</button>
+            </div>
+        </template>
+
+
+        <template id="welcome-template">
+            <div class="welcome-card__container">
+                <p class="welcome-card__title">Welcome, Friends!</p>
+                <div class="welcome-card__decos">
+                    <img src="./images/snoopy.gif" alt="snoopy" class="welcome-card__decos--snoopy">
+                    <div class="welcome-card__decos--torch left"></div>
+                    <div class="welcome-card__decos--torch right"></div>
+                </div>
+                <div class="welcome-card__table"><span class="top-element">🔮</span></div>
+                <div class="welcome-card__speech-bubble">
+                    <div class="welcome-card__speech-bubble_title"><p>Snoopy</p></div>
+                    <div class="welcome-card__speech-bubble_content">
+                        <p>If you're looking for answers,<br>you've come to the right place</p>
+                        <p>I will be your Tarot Reader this Evening.</p>
+                        <p>If you'd like to know a little about Tarot, and Tarot Reading, let me know!</p>
+                        <p>Otherwise, What is your Question?</p>
+                    </div>
+                </div>
+                <button type="button" class="welcome-card__more-button">More About Tarot!</button>
+            </div>
+        </template>
+        <template id="more-about-tarot-template">
+            <div class="more-about-tarot__container">
+                <p>Sure!, Let Me Explain a little bit. So...</p>
+                <p>Tarot Cards are a Sacred Deck of 78 Cards, each holding Its Own Ancient Energy and Wisdom.</p>
+                <p>Theyre split between the <u>22 Major Arcana</u>, Which speak to the BIG Soul Lessons of your Journey, alongside the <u>56 Minor Arcana</u>, which reflect the Everyday Ebbs and Flows of your Life.</p>
+                <p>When we work with the Deck, We're holding a Mirror to the Self, As well as The Universe!</p>
+                <p>Tarot Readers, in turn, will take the Intention set by the Answer Seeker, Being You or Themselves, and shuffle the Cards with Purpose.</p>
+                <p>The Reader will let their Intuition Guide Them when to Stop</p>
+                <p>The Cards that fall are Never Random; The Universe has a way of Showing You what You Need To See.</p>
+                <p>When You recieve your Card, or Cards, Please do not just take The Textbook Meanings and Keywords, Make sure To FEEL the cards as well.</p>
+                <p>Let the Imagery Speak to You, Notice What Jumps Out at You, and What Makes your Stomach Flutter.</p>
+                <p>Anything that Makes you want to Look Away?</p>
+                <p>Thats often where the Real Magic Lays Hiding.</p>
+                <p>Tarot and Tarot Reading are not always about Predicting the Future...</p>
+                <p>They're for Illuminating the Energies Around You in the Moment, So you can move with more Wisdom and Intention in your Mind and Soul.</p>
+                <p>Remember, The Cards don't control your path, Sweet Seeker of Knowledge, YOU DO. The Cards are there to Help, Like Tools, For you to see your Environment More Clearly</p>
+                <p>Now, Let Me Know, What Question You many be Wondering About...</p>
+            </div>
+        </template>
+
+        <template id="card-selection-template">
+            <div class="card-selection__container">
+                <button type="button" class="card-selection__card card-selection__card--gold wip">✨✨<br>3 Card Question<br>✨✨</button>
+                <button type="button" class="card-selection__card card-selection__card--emerald">✨<br>1 Card Question<br>✨</button>
+                <button type="button" class="card-selection__card card-selection__card--diamond wip">✨✨✨<br>5 Card Question<br>✨✨✨</button>
+            </div>
+        </template>
+
+        <template id="shuffling-template">
+            <div class="shuffling__container">
+                <div class="shuffling__animation">
+                    <div class="shuffling__breath"></div>
+                    <div class="shuffling__snoopy"></div>
+                </div>
+                <div class="shuffling__title"><p>Shuffling...</p></div>
+            </div>
+        </template>
+        <template id="one-card-reading-template">
+            <div class="one-card-reading__container">
+                <h2 class="one-card-reading__header">The Universe Has Provided You With...</h2>
+                <button class="one-card-reading__card">
+                    <img class="one-card-reading__card-image" alt="" src="">
+                </button>
+                <div class="one-card-reading__card-details">
+                    <h3 class="one-card-reading__card-details--name"></h3>
+                    <p class="one-card-reading__card-details--isreversed is__not-visible">⚜️Reversed⚜️</p>
+                    <div class="break"></div>
+                    <p class="one-card-reading__card-details--keywords"></p>
+                    <p class="one-card-reading__card-details--description"></p>
+                </div>
+                <div></div>
+                <div class="one-card-reading__card-insight">
+                    <div class="one-card-reading__card-insight--speaker">Snoopy</div>
+                    <div class="one-card-reading__card-insight--background__container">
+                        <div class="one-card-reading__card-insight--background"></div>
+                    </div>
+                    <p class="one-card-reading__card-insight--card">
+                        I see... 
+                        <br>
+                        This card comes to you when 
+                        <span class="one-card-reading__card-insight--card-insight"></span>
+                    </p>
+                    <p class="one-card-reading__card-insight--fortune">
+                        The Universe is also urging me to tell you,
+                        <br>
+                        <span class="one-card-reading__card-insight--fortune-insight"></span>
+                        <br>
+                        <span class="one-card-reading__card-insight--fortune-remark"></span>
+                    </p>
+                    <p>
+                    ✨🔮✨
+                    </p>
+                    <p class="one-card-reading__card-insight--extrafortune is__not-visible">
+                        Need an Extra Hint? Well... Lets See, Try Searching or Looking At 
+                        <span class="one-card-reading__card-insight--extrafortune-insight"></span>
+                    </p>
+                </div>
+                <div class=""></div>
+                <div class="one-card-reading-modal__container is__not-visible">
+                    <div class="one-card-reading__modal">
+                        <img class="one-card-reading__modal-image">
+                        <h2 class="one-card-reading__modal-image-description"></h2>
+                    </div>
+                </div>
+                <button type="button" class="one-card-reading__extrafortune-button"></button>
+                <div> Have Another Question?</div>
+            </div>
+                    <!--  Card Selection  -->
+        </template>
+        <template id="card-focus-template">
+            <div class="card-focus__container">
+                <button class="card-focus__exit-background exit" type="button"></button>
+                <div class="card-focus__main">
+                    <button class="card-focus__exit-button exit" type="button"><img src="./images/crown.svg" alt="exit"></button>
+                    <img class="card-focus__card" src="./images/tarot-images/00-TheFool.jpg" alt="">
+                    <h2 class="card-focus__details"></h2>
+                </div>
+            </div>
+        </template>
+        <script src="scriptinfo.js"></script>
+        <script src="script.js"></script>
+    </body>
+</html>

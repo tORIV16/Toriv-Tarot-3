@@ -1,0 +1,9 @@
+#content-area {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 370px;
+    opacity: 1;
+    transition: opacity 0.5s linear;
+    width: 100%;
+}

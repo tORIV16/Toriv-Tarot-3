@@ -1,0 +1,13 @@
+.main {
+    box-sizing: border-box;
+    z-index: 20;
+    max-width: 290px;
+    width: 100%;
+    background-color: rgba(76, 0, 130, 0.5);
+    margin: 50px auto 10px;
+    border-radius: 145px 145px 0 0;
+    border: 15px outset rgb(159, 67, 14);
+    box-shadow: 0 0 10px white,
+            inset 0 0 10px rgba(42, 0, 72, 0.75);
+    padding: 10px 0;
+}

@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    background: lightblue;
+    scrollbar-width: none;
+}
+
+.page {
+    position: relative;
+}
+
+.top-element {
+    z-index: 100;
+}
+
+.rightside {
+    animation: arriving 0.5s ease-out;
+}
+
+.reversed {
+    transform: rotate(180deg);
+    animation: arriving-reversedside 0.5s ease-out;
+}
+
+.is__not-visible {
+    display: none;
+}
+
+.break {
+    width: 80%;
+    border-bottom: 2px dotted silver;
+    margin: 5px auto
+}
+
+.apear {
+    animation: appear 0.25s ease-in;
+}
+
+.disapear {
+    animation: disapear 0.25s ease-out;
+}
