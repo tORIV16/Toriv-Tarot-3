@@ -133,7 +133,7 @@ const welcomePage = startButton.addEventListener("click", () => {
             });
 
 
-        }, 2000);
+        }, 6000);
     })
 });
 

@@ -22,7 +22,7 @@
     height: 150px;
     border-radius: 50%;
     margin: 0 auto;
-    animation: breath 8s linear;
+    animation: breath 6s linear;
 }
 
 .shuffling__snoopy {
