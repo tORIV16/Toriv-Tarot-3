@@ -5,16 +5,23 @@
     left: 0;
     bottom: 0;
     z-index: 1000;
-    animation: appear 0.25s ease-in;
+    opacity: 1;
 }
 
 .card-focus__container {
-    width: 100%;
+    max-width: 100%;
     height: 100%;
+    margin: 0 auto;
     position: relative;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
 }
 
 .card-focus__exit-background {
+    box-sizing: border-box;
     position: absolute;
     top: 0;
     left: 0;
@@ -24,26 +31,12 @@
     background: #19023561;
     border: none;
     cursor: pointer;
-    box-sizing: border-box;
     box-shadow: inset 0 0 250px black;
-}
-
-.card-focus__main {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    box-sizing: border-box;
-    max-width: 320px;
-    margin: 0 auto;
-    height: 100%;
-    gap: 10px;
-
 }
 
 .card-focus__exit-button {
     z-index: 1;
-    align-self: end;
-    margin: 0 20px;
+    margin: 0 auto;
     background: #ffffff44;
     border: none;
     box-sizing: border-box;
@@ -52,9 +45,7 @@
     height: 30px;
     cursor: pointer;
     color: white;
-    font-family: Carima;
-    text-align: center;
-    font-size: 1.5em;
+    transform: translateX(110px);
 }
 .card-focus__exit-button img {
     width: 30px;
@@ -71,17 +62,25 @@
 
 .card-focus__card {
     filter: saturate(150%);
-    max-height: 75%;
+    max-height: 75vh;
+    max-width: 75vw;
+    margin: 0 auto;
     border: 2px solid white;
     box-sizing: border-box;
     box-shadow: 0 0 3px white;
     border-radius: 10px;
 }
 
+.card-focus__card:hover {
+    box-shadow: 0 0 3px gold;
+    border: 2px solid gold;
+}
+
 .card-focus__details {
     z-index: 1;
     text-wrap: wrap;
     box-sizing: border-box;
+    margin: 0 auto;
     font-family: Carima;
     color: white;
     background: #444444aa;

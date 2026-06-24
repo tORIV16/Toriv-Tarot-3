@@ -114,6 +114,7 @@ const welcomePage = startButton.addEventListener("click", () => {
 
             openCard.addEventListener("click", () => {
                 fullscreenBlock.classList.toggle("is__not-visible");
+                fullscreenBlock.classList.toggle("appear");
                 const fullscreenModal = getTemplateClone("#card-focus-template", ".card-focus__container");
                 const imageFullscreen = getElement(fullscreenModal, ".card-focus__card");
                 const detailsFullscreen = getElement(fullscreenModal, ".card-focus__details");
@@ -123,19 +124,16 @@ const welcomePage = startButton.addEventListener("click", () => {
                 detailsFullscreen.append(selectedTarotCard.keyword);
 
                 fullscreenBlock.append(fullscreenModal);
-                console.log(exitFullscreenBtn)
                 exitFullscreenBtn.forEach(item => item.addEventListener("click", () => {
-                    fullscreenBlock.classList.toggle("dissapear");
                     setTimeout(() => {
-                        fullscreenBlock.classList.toggle("is__not-visible");
-                        fullscreenBlock.classList.toggle("disapear");
                         clearLog(fullscreenBlock);
+                        fullscreenBlock.classList.toggle("is__not-visible");
                     }, 250);
                 }));
             });
 
 
-        }, 8000);
+        }, 2000);
     })
 });
 

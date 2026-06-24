@@ -27,6 +27,7 @@ html {
 
 .is__not-visible {
     display: none;
+    opacity: 0;
 }
 
 .break {
@@ -35,7 +36,7 @@ html {
     margin: 5px auto
 }
 
-.apear {
+.appear {
     animation: appear 0.25s ease-in;
 }
 
