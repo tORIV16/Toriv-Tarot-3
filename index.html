@@ -99,7 +99,7 @@
 
         <template id="card-selection-template">
             <div class="card-selection__container">
-                <button type="button" class="card-selection__card card-selection__card--gold wip">✨✨<br>3 Card Question<br>✨✨</button>
+                <button type="button" class="card-selection__card card-selection__card--gold">✨✨<br>3 Card Question<br>✨✨</button>
                 <button type="button" class="card-selection__card card-selection__card--emerald">✨<br>1 Card Question<br>✨</button>
                 <button type="button" class="card-selection__card card-selection__card--diamond wip">✨✨✨<br>5 Card Question<br>✨✨✨</button>
             </div>
@@ -166,6 +166,61 @@
             </div>
                     <!--  Card Selection  -->
         </template>
+        <template id="three-card-reading-template">
+            <div class="three-card-reading__container">
+                <h2 class="three-card-reading__header">The Universe Has Provided You With...</h2>
+                <div class="three-card-reading__card-hand">
+                    <button class="three-card-reading__card-two three-card-reading__card-button">
+                        <img class="three-card-reading__card-image three-card-reading__card-two-image" alt="#" src="#">
+                    </button>
+                    <button class="three-card-reading__card-one three-card-reading__card-button">
+                        <img class="three-card-reading__card-image three-card-reading__card-one-image" alt="#" src="#">
+                    </button>
+                    <button class="three-card-reading__card-three three-card-reading__card-button">
+                        <img class="three-card-reading__card-image three-card-reading__card-three-image" alt="#" src="#">
+                    </button>
+                </div>
+                <div class="three-card-reading__card-details">
+                    <h3 class="three-card-reading__card-details--name"></h3>
+                    <div class="break"></div>
+                    <p class="three-card-reading__card-details--description"></p>
+                </div>
+                <div></div>
+                <div class="three-card-reading__card-insight">
+                    <div class="three-card-reading__card-insight--speaker">Snoopy</div>
+                    <div class="three-card-reading__card-insight--background__container">
+                        <div class="three-card-reading__card-insight--background"></div>
+                    </div>
+                    <p class="three-card-reading__card-insight--card">
+                        I see... 
+                        <br>
+                        <span class="three-card-reading__card-insight--card-insight-one"></span>
+                        <p>
+                            ✨🌙✨
+                        </p>
+                        <span class="three-card-reading__card-insight--card-insight-two"></span>
+                        <p>
+                            ✨🌙✨
+                        </p>
+                        <span class="three-card-reading__card-insight--card-insight-three"></span>
+                        <p class="three-card-reading__card-insight--card-insight-advice"></p>
+                    </p>
+                    <p>
+                    ✨🔮✨
+                    </p>
+                </div>
+                <div class=""></div>
+                <div class="three-card-reading-modal__container is__not-visible">
+                    <div class="three-card-reading__modal">
+                        <img class="three-card-reading__modal-image">
+                        <h2 class="three-card-reading__modal-image-description"></h2>
+                    </div>
+                </div>
+                <button type="button" class="three-card-reading__extrafortune-button"></button>
+                <div> Have Another Question?</div>
+            </div>
+                    <!--  Card Selection  -->
+        </template>
         <template id="card-focus-template">
             <div class="card-focus__container">
                 <button class="card-focus__exit-background exit" type="button"></button>
@@ -175,7 +230,7 @@
                 </div>
             </div>
         </template>
-        <script src="scriptinfo.js"></script>
         <script src="script.js"></script>
+        <script src="scriptinfo.js"></script>
     </body>
 </html>

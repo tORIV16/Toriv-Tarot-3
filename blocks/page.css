@@ -3,6 +3,10 @@
     padding: 0;
 }
 
+:root {
+    --card-highlight: gold;
+}
+
 html {
     background: lightblue;
     scrollbar-width: none;
@@ -16,15 +20,6 @@ html {
     z-index: 100;
 }
 
-.rightside {
-    animation: arriving 0.5s ease-out;
-}
-
-.reversed {
-    transform: rotate(180deg);
-    animation: arriving-reversedside 0.5s ease-out;
-}
-
 .is__not-visible {
     display: none;
     opacity: 0;
@@ -34,12 +29,4 @@ html {
     width: 80%;
     border-bottom: 2px dotted silver;
     margin: 5px auto
-}
-
-.appear {
-    animation: appear 0.25s ease-in;
-}
-
-.disapear {
-    animation: disapear 0.25s ease-out;
 }

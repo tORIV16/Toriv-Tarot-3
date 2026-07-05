@@ -98,3 +98,21 @@
         ;
     }
 }
+
+.rightside {
+    animation: arriving 0.5s ease-out;
+}
+
+.reversed {
+    transform: rotate(180deg);
+    animation: arriving-reversedside 0.5s ease-out;
+}
+
+
+.appear {
+    animation: appear 0.25s ease-in;
+}
+
+.disapear {
+    animation: disapear 0.25s ease-out;
+}
