@@ -35,12 +35,12 @@ const mainTitlePage = getTemplateClone("#welcome-title-template", ".welcome-titl
 const shuffling = getTemplateClone("#shuffling-template", ".shuffling__container");
 contentBlock.append(mainTitlePage);
 
-const startButton = contentBlock.querySelector(".welcome-title__button")
+const startButton = contentBlock.querySelector(".welcome-title__button");
+const cardSelection = getTemplateClone("#card-selection-template", ".card-selection__container");
+const welcomeTemplate = getTemplateClone("#welcome-template", ".welcome-card__container");
 const welcomePage = startButton.addEventListener("click", () => {
     toTop();
     clearLog(contentBlock);
-    const welcomeTemplate = getTemplateClone("#welcome-template", ".welcome-card__container");
-    const cardSelection = getTemplateClone("#card-selection-template", ".card-selection__container");
     
     contentBlock.append(welcomeTemplate, cardSelection);
     const aboutTarotButton = getElement(contentBlock, ".welcome-card__more-button");
