@@ -60,9 +60,12 @@ const welcomePage = startButton.addEventListener("click", () => {
 
         aboutTarotButton.disabled=true;
     });
+            
+    const newCard = getTemplateClone("#new-card-selection-template", ".new-card-selection__container");
+    const newCardComment = getElement(newCard, ".new-card-selection__text-container_text");
 
     oneCardPull.addEventListener("click", () => {
-
+        newCardComment.textContent = "";
         clearLog(contentBlock);
         toTop();
         contentBlock.append(shuffling);
@@ -101,15 +104,14 @@ const welcomePage = startButton.addEventListener("click", () => {
             oneCardImage.src = selectedTarotCard.image;
             oneCardImage.alt = selectedTarotCard.name;
             oneCardName.append(selectedTarotCard.name);
-            oneCardKeywords.append(selectedTarotCard.keyword);
+            oneCardKeywords.append(selectedTarotCard.keyword.join(", "));
             oneCardDescription.append(selectedTarotCard.meaning);
             readingMeaning.append(selectedTarotCard.message);
             readingFortune.append(selectedfortune.fortune);
             readingFortuneRemark.append(selectedfortune.remark);
+            newCardComment.append(conclusionReading[Math.floor(Math.random() * conclusionReading.length)], " ", newCardSegway[Math.floor(Math.random() * newCardSegway.length)]);
 
-
-
-            contentBlock.append(oneCardTemplate, cardSelection);
+            contentBlock.append(oneCardTemplate, newCard, cardSelection);
 
             openCard.addEventListener("click", () => {
                 fullscreenBlock.classList.toggle("is__not-visible");
@@ -136,6 +138,7 @@ const welcomePage = startButton.addEventListener("click", () => {
     })
 
     threeCardPull.addEventListener("click", () => {
+        newCardComment.textContent = "";
         toTop();
         clearLog(contentBlock);
         
@@ -220,8 +223,9 @@ const welcomePage = startButton.addEventListener("click", () => {
             middleReading.append(comingFromCard.bridge, " ", movingforwardCard.closer);
             adviceReading.append(adviceQuote[Math.floor(Math.random() * adviceQuote.length)], )
             adviceReadingAdvice.append(movingforwardCard.advice)
+            newCardComment.append(conclusionReading[Math.floor(Math.random() * conclusionReading.length)], " ", newCardSegway[Math.floor(Math.random() * newCardSegway.length)]);
 
-            contentBlock.append(threeCardTemplate, cardSelection);
+            contentBlock.append(threeCardTemplate, newCard, cardSelection);
 
 
         }, 6000);
@@ -230,6 +234,106 @@ const welcomePage = startButton.addEventListener("click", () => {
 
 
             
+
+    });
+
+    fiveCardPull.addEventListener("click", () => {
+        newCardComment.textContent = "";
+        toTop();
+        clearLog(contentBlock);
+        
+        contentBlock.append(shuffling);
+        setTimeout(() => {
+            clearLog(contentBlock);
+            // Clears Keywords Array
+            keywordsReading.length = 0;
+
+            // Selects five Random Cards
+            const hand = [];
+            let tension = 0;
+
+            while (hand.length < 5) {
+                const card = tarotCards[Math.floor(Math.random() * tarotCards.length)];
+                const alreadyHave = hand.some(v => v.card === card.card && v.side === card.side);
+                if (!alreadyHave) {
+                    hand.push(card);
+                    keywordsReading.push(card.keyword[Math.floor(Math.random() * card.keyword.length)])
+                }
+            }
+            console.log(hand);
+
+            // Define Cards
+            const comingFromCardOne = hand[0];
+            const comingFromCardTwo = hand[1]
+            const mainCard = hand[2];
+            const movingforwardCardOne = hand[3];
+            const movingforwardCardTwo = hand[4];
+
+            
+            // Template
+            const fiveCardTemplate = getTemplateClone("#five-card-reading-template", ".five-card-reading__container");
+
+            //  Collection of Buttons(Cards)
+            const cardHand = getElement(fiveCardTemplate, ".five-card-reading__card-hand");
+
+            // Displayed Cards
+            const myCards = getAllElements(cardHand, ".five-card-reading__card-image");
+            console.log(myCards);
+
+            for (let v = 0; v < hand.length; v++) {
+                myCards[v].src = hand[v].image;
+                myCards[v].alt = hand[v].altText;
+                tension += hand[v].tension;
+                if (hand[v].side === "B") {
+                    myCards[v].classList.add("reversed");
+                }  
+                else {
+                    myCards[v].classList.add("rightside");
+                }
+            }
+
+            // Main Card Name
+            const fiveCardName = getElement(fiveCardTemplate, ".five-card-reading__card-details--name");
+            fiveCardName.append(mainCard.name);
+
+            // Main Card Description
+            const fiveCardDescription = getElement(fiveCardTemplate, ".five-card-reading__card-details--description");
+            fiveCardDescription.append(mainCard.meaning);
+
+            // READING
+            const fiveCardReading = getElement(fiveCardTemplate, ".five-card-reading__card-insight");
+
+            const introReading = getElement(fiveCardReading, ".five-card-reading__card-insight--card-intro");
+            const mainReading = getElement(fiveCardReading, ".five-card-reading__card-insight--card-insight");
+
+            if (tension == 0) {
+                mainReading.append(openingLinesTwo[0][Math.floor(Math.random() * openingLinesTwo[0].length)], " ")
+            } else if (tension > 0 && tension <= 8) {
+                mainReading.append(openingLinesTwo[1][Math.floor(Math.random() * openingLinesTwo[1].length)], " ")
+            } else if (tension > 8 && tension <= 16) {
+                mainReading.append(openingLinesTwo[2][Math.floor(Math.random() * openingLinesTwo[2].length)], " ")
+            } else if (tension > 16 && tension <= 25) {
+                mainReading.append(openingLinesTwo[3][Math.floor(Math.random() * openingLinesTwo[3].length)], " ")
+            }
+
+
+            introReading.append(readingSegues[Math.floor(Math.random() * readingSegues.length)]);
+            mainReading.append(
+                comingFromCardOne.spreadFocus, " ",
+                comingFromCardTwo.spreadChallenge, " ",
+                mainCard.spreadAdvice, " ",
+                movingforwardCardOne.spreadSuccess, " ",
+                movingforwardCardTwo.spreadMoveForward
+            );
+
+
+
+            newCardComment.append(conclusionReading[Math.floor(Math.random() * conclusionReading.length)], " ", newCardSegway[Math.floor(Math.random() * newCardSegway.length)]);
+
+            contentBlock.append(fiveCardTemplate, newCard, cardSelection);
+
+
+        }, 6000);
 
     });
 });

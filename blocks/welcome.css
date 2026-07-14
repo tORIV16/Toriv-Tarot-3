@@ -3,6 +3,7 @@
     flex-direction: column;
     min-height: 370px;
     justify-content: space-between;
+    position: relative;
 }
 
 .welcome-title {
@@ -21,6 +22,12 @@
     font-size: 0.5em;
 }
 
+.welcome-title__decos {
+    margin: 10px auto;
+    position: relative;
+    width: 100%;
+}
+
 .welcome-title__deco {
     background-image: url(../images/thefool-rotate.gif);
     background-position: center;
@@ -32,12 +39,27 @@
     opacity: 0.8;
 }
 
+.welcome-title__decos--torch {
+    position: absolute;
+    background-image: url(../images/Soul_Torch.gif);
+    background-position: center;
+    background-size: cover;
+    width: 50px;
+    height: 100px;
+}
+
 .welcome-title__button {
+    font-family: Chalk;
+    font-size: 1.8em;
     justify-self: flex-end;
+    width: 90%;
+    margin: 10px auto;
     padding: 10px 0;
-    background-color: purple;
+    background-image: radial-gradient(
+        circle at bottom right,
+        gold 10%, rgba(87, 0, 128, 0.486)
+    );
     border: 5px outset indigo;
-    box-shadow: 0 0 2px white;
     color: white;
     border-radius: 15px;
 }
@@ -47,6 +69,7 @@
             cursor: pointer;
             background-color: pink;
             color: indigo;
+            text-shadow: 0 0 5px white;
         }
 
                 .welcome-title__button:active {

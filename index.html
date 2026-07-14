@@ -50,8 +50,14 @@
                     <span class="welcome-title--small">Welcome to</span><br>
                     Snoopy's<br>Fortune Shop
                 </h2>
-                <div class="welcome-title__deco"></div>
-                <button type="button" class="welcome-title__button">Clique-moi !</button>
+                <div class="welcome-title__decos">
+                    <div class="welcome-title__deco"></div>
+                    <div class="welcome-title__decos--torch left"></div>
+                    <div class="welcome-title__decos--torch right"></div>
+                </div>
+                <div class="break"></div>
+                <button type="button" class="welcome-title__button">Welcome!</button>
+                <div class="break"></div>
             </div>
         </template>
 
@@ -97,11 +103,22 @@
             </div>
         </template>
 
+        <template id="new-card-selection-template">
+            <div class="new-card-selection__container">
+                <img class="new-card-selection__snoopy" src="./images/snoopy.gif" alt="Snoopy">
+                <div class="new-card-selection__text-container">
+                    <p>Interesting...</p>
+                    <p class="new-card-selection__text-container_text"></p>
+                </div>
+                <div class="break"></div>
+            </div>
+        </template>
+
         <template id="card-selection-template">
             <div class="card-selection__container">
                 <button type="button" class="card-selection__card card-selection__card--gold">✨✨<br>3 Card Question<br>✨✨</button>
                 <button type="button" class="card-selection__card card-selection__card--emerald">✨<br>1 Card Question<br>✨</button>
-                <button type="button" class="card-selection__card card-selection__card--diamond wip">✨✨✨<br>5 Card Question<br>✨✨✨</button>
+                <button type="button" class="card-selection__card card-selection__card--diamond">✨✨✨<br>5 Card Question<br>✨✨✨</button>
             </div>
         </template>
 
@@ -161,10 +178,7 @@
                         <h2 class="one-card-reading__modal-image-description"></h2>
                     </div>
                 </div>
-                <button type="button" class="one-card-reading__extrafortune-button"></button>
-                <div> Have Another Question?</div>
             </div>
-                    <!--  Card Selection  -->
         </template>
         <template id="three-card-reading-template">
             <div class="three-card-reading__container">
@@ -216,11 +230,67 @@
                         <h2 class="three-card-reading__modal-image-description"></h2>
                     </div>
                 </div>
-                <button type="button" class="three-card-reading__extrafortune-button"></button>
-                <div> Have Another Question?</div>
             </div>
-                    <!--  Card Selection  -->
         </template>
+
+
+
+        <template id="five-card-reading-template">
+            <div class="five-card-reading__container">
+                <h2 class="five-card-reading__header">The Universe Has Provided You With...</h2>
+                <div class="five-card-reading__card-hand">
+                    <button class="five-card-reading__card-two five-card-reading__card-button">
+                        <img class="five-card-reading__card-image five-card-reading__card-two-image" alt="#" src="#">
+                    </button>
+                    <button class="five-card-reading__card-three five-card-reading__card-button">
+                        <img class="five-card-reading__card-image five-card-reading__card-three-image" alt="#" src="#">
+                    </button>
+                    <button class="five-card-reading__card-one five-card-reading__card-button">
+                        <img class="five-card-reading__card-image five-card-reading__card-one-image" alt="#" src="#">
+                    </button>
+                    <button class="five-card-reading__card-four five-card-reading__card-button">
+                        <img class="five-card-reading__card-image five-card-reading__card-four-image" alt="#" src="#">
+                    </button>
+                    <button class="five-card-reading__card-five five-card-reading__card-button">
+                        <img class="five-card-reading__card-image five-card-reading__card-five-image" alt="#" src="#">
+                    </button>
+                </div>
+                <div class="five-card-reading__card-details">
+                    <h3 class="five-card-reading__card-details--name"></h3>
+                    <div class="break"></div>
+                    <p class="five-card-reading__card-details--description"></p>
+                </div>
+                <div></div>
+                <div class="five-card-reading__card-insight">
+                    <div class="five-card-reading__card-insight--speaker">Snoopy</div>
+                    <div class="five-card-reading__card-insight--background__container">
+                        <div class="five-card-reading__card-insight--background"></div>
+                    </div>
+                    <p class="five-card-reading__card-insight--card">
+                        <p>
+                            ✨🌙✨
+                        </p>
+                        <span class="five-card-reading__card-insight--card-intro"></span>
+                        <span class="five-card-reading__card-insight--card-insight"></span>
+                        <p>
+                            ✨🔮✨
+                        </p>
+                    </p>
+                </div>
+                <div class=""></div>
+                <div class="five-card-reading-modal__container is__not-visible">
+                    <div class="five-card-reading__modal">
+                        <img class="five-card-reading__modal-image">
+                        <h2 class="five-card-reading__modal-image-description"></h2>
+                    </div>
+                </div>
+            </div>
+        </template>
+
+
+
+
+
         <template id="card-focus-template">
             <div class="card-focus__container">
                 <button class="card-focus__exit-background exit" type="button"></button>

@@ -1,12 +1,11 @@
-.three-card-reading__container {
+.five-card-reading__container {
     display: flex;
     justify-content: center;
     flex-direction: column;
     text-align: center;
-    box-sizing: border-box;
 }
 
-.three-card-reading__header {
+.five-card-reading__header {
     font-family: Carima;
     font-size: 1.5em;
     color: white;
@@ -17,66 +16,82 @@
             inset 0 0 10px gold; 
 }
 
-.three-card-reading__card-hand {
+.five-card-reading__card-hand {
     display: flex;
+    box-sizing: border-box;
     justify-content: center;
     align-items: center;
     position: relative;
-    box-sizing: border-box;
     margin: 10px;
 }
 
-.three-card-reading__card-button {
+.five-card-reading__card-button {
     width: 25%;
+    box-sizing: border-box;
     margin: auto;
     background: none;
-    box-sizing: border-box;
     border: none;
 }
 
-.three-card-reading__card-one {
-    width: 40%;
+.five-card-reading__card-one {
+    width: 35%;
     z-index: 2;
 }
 
-.three-card-reading__card-two {
+.five-card-reading__card-two {
     position: absolute;
-    left: 0;
-    top: 25%;
-    transform: rotate(-30deg);
+    left: -25px;
+    top: 35%;
+    transform: rotate(-45deg);
 }
 
-.three-card-reading__card-three {
+.five-card-reading__card-three {
     position: absolute;
-    right: 0;
-    top: 25%;
-    transform: rotate(30deg);
+    left: 10%;
+    top: 10%;
+    transform: rotate(-25deg);
+    z-index: 1;
+}
+
+.five-card-reading__card-four {
+    position: absolute;
+    right: 10%;
+    top: 10%;
+    transform: rotate(25deg);
+    z-index: 1;
+}
+
+.five-card-reading__card-five {
+    position: absolute;
+    right: -25px;
+    top: 35%;
+    transform: rotate(45deg);
 }
 
 
-.three-card-reading__card-image {
+.five-card-reading__card-image {
     filter: saturate(150%);
+    box-sizing: border-box;
     width: 100%;
     border: 2px solid white;
-    box-sizing: border-box;
     box-shadow: 0 0 10px white;
     border-radius: 6.66px;
 }
 
-.three-card-reading__card-image:hover {
+.five-card-reading__card-image:hover {
     filter:brightness(150%);
     border: 2px solid rgb(255, 245, 172);
     box-shadow: 0 0 15px gold;
     cursor: pointer;
 }
 
-.three-card-reading__card-image:active {
+.five-card-reading__card-image:active {
     filter:brightness(200%);
     border: 2px solid rgb(255, 230, 43);
     box-shadow: 0 0 20px gold;
 }
 
-.three-card-reading__card-details {
+.five-card-reading__card-details {
     background-image: 
         radial-gradient(
             #ffffff80, transparent, #ffffff80, transparent, #ffffff80, transparent, #ffffff80, transparent
@@ -95,26 +110,26 @@
     font-family: Carima;
 }
 
-.three-card-reading__card-details--name, .three-card-reading__card-details--isreversed {
+.five-card-reading__card-details--name, .five-card-reading__card-details--isreversed {
     color: white;
     text-shadow: 0 0 3px black;
 }
 
-.three-card-reading__card-details--keywords {
+.five-card-reading__card-details--keywords {
     font-size: 0.75em;
 }
 
-.three-card-reading__card-details--description {
+.five-card-reading__card-details--description {
     font-size: 0.5em;
 }
-.three-card-reading__card-details--description::before {
+.five-card-reading__card-details--description::before {
     content: '"'
 }
 
-.three-card-reading__card-details--description::after {
+.five-card-reading__card-details--description::after {
     content: '"'
 }
-.three-card-reading__card-insight {
+.five-card-reading__card-insight {
     position: relative;
     box-sizing: border-box;
     border: 7px outset red;
@@ -129,7 +144,7 @@
     color: white;
 }
 
-.three-card-reading__card-insight--background__container { 
+.five-card-reading__card-insight--background__container { 
     position: absolute;
     overflow: hidden;
     border-radius: 30%;
@@ -141,7 +156,7 @@
     z-index: -1;
 }
 
-.three-card-reading__card-insight--background {
+.five-card-reading__card-insight--background {
     width: 100%;
     height: 100%;
     transform: rotate(20deg) scale(2);
@@ -162,7 +177,7 @@
 
 }
 
-.three-card-reading__card-insight--speaker {
+.five-card-reading__card-insight--speaker {
     background-color: rgb(234, 255, 229);
     text-shadow: 0 0 2px black;
     font-family: BadUnicorn;
@@ -176,19 +191,19 @@
     left: 5px;
 }
 
-.three-card-reading__card-insight p {
+.five-card-reading__card-insight p {
     margin-bottom: 10px;
 }
 
-.three-card-reading__card-insight--fortune-insight {
+.five-card-reading__card-insight--fortune-insight {
     font-size: 1.5em;
     margin: 5px auto;
 }
 
-.three-card-reading__card-insight--fortune-insight::before {
+.five-card-reading__card-insight--fortune-insight::before {
     content: '"'
 }
 
-.three-card-reading__card-insight--fortune-insight::after {
+.five-card-reading__card-insight--fortune-insight::after {
     content: '."'
 }

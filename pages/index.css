@@ -3,9 +3,11 @@
 @import url(../blocks/backdrop.css);
 @import url(../blocks/card-selection.css);
 @import url(../blocks/content.css);
+@import url(../blocks/five-card-reading.css);
 @import url(../blocks/fullscreen.css);
 @import url(../blocks/header.css);
 @import url(../blocks/main.css);
+@import url(../blocks/newCard.css);
 @import url(../blocks/one-card-reading.css);
 @import url(../blocks/three-card-reading.css);
 @import url(../blocks/page.css);

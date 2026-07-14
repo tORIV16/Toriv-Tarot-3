@@ -1,0 +1,44 @@
+.new-card-selection__container {
+    width: 95%;
+    box-sizing: border-box;
+    margin: -50px auto 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: -10px;
+    z-index: 3;
+}
+
+.new-card-selection__snoopy {
+    width: 200px;
+    margin: 0 0 -20px;
+}
+
+.new-card-selection__text-container {
+    font-family: BadUnicorn;
+    font-size: 1.5em;
+    box-sizing: border-box;
+    margin: 5px auto;
+    padding: 10px;
+    width: 100%;
+    border: 3px solid red;
+    border-radius: 25%;
+    background-color: #3a1620cc;
+    background-image: 
+        radial-gradient(
+            circle,
+            rgba(212, 175, 55, 0.5) 1px,
+            transparent 1px
+        )
+    ;
+    background-size: 12px 12px;
+    text-align: center;
+    color: white;
+    box-shadow: 0 0 5px white,
+            inset 0 0 5px #00000066;
+    text-shadow: 0 0 5px rgba(212, 175, 55, 0.75)
+}
+
+.new-card-selection__text-container_text {
+}

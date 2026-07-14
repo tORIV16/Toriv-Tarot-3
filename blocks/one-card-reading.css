@@ -27,6 +27,7 @@
     filter: saturate(150%);
     width: 100%;
     border: 2px solid white;
+    box-sizing: border-box;
     box-shadow: 0 0 10px white;
     border-radius: 6.66px;
 }
@@ -91,7 +92,7 @@
             inset 0 0 5px #000000ff;
     border-radius: 30%;
     margin: 15px 2%;
-    padding: 15px 20px 30px;
+    padding: 15px 20px;
     font-family: BadUnicorn;
     font-size: 1.5em;
     color: white;
@@ -159,4 +160,8 @@
 
 .one-card-reading__card-insight--fortune-insight::after {
     content: '."'
+}
+
+@media screen and (min-width: 1024px) {
+    
 }

@@ -11,3 +11,10 @@
     font-weight: 400;
     src: url(./fonts/BadUnicornDemoRegular-BVWx.ttf);
 }
+
+@font-face {
+    font-family: "Chalk";
+    font-style: normal;
+    font-weight: 400;
+    src: url(./fonts/FrederickatheGreat-Regular.ttf);
+}
