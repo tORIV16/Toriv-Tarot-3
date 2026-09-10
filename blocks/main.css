@@ -51,9 +51,9 @@
             animation: spin 10s linear infinite;
         }
 
-@media screen and (min-width: 420px) and (max-width: 769px) {
+@media screen and (min-width: 420px) {
     .main {
-        margin-top: 14%;
+        margin-top: 13%;
         max-width: 550px;
         border-radius: 275px 275px 0 0;
     }

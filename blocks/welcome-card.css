@@ -160,7 +160,7 @@
     opacity: 0.25;
 }
 
-@media screen and (min-width: 420px) and (max-width: 769px) {
+@media screen and (min-width: 420px) {
     .welcome-card__title {
         font-size: clamp(1.5em, 10vw, 3em );
     }

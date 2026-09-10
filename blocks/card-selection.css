@@ -81,7 +81,7 @@
     background-image: linear-gradient(45deg, rgb(53, 246, 246), rgb(210, 254, 255), rgb(53, 246, 246));
 }
 
-@media screen and (min-width: 560px) and (max-width: 769px) {
+@media screen and (min-width: 560px) {
     .card-selection__container {
         min-height: 300px;
     }

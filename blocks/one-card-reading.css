@@ -167,7 +167,7 @@
     content: '."'
 }
 
-@media screen and (min-width: 420px) and (max-width: 769px) {
+@media screen and (min-width: 420px) {
     .one-card-reading__card {
         margin: 20px auto 10px;
     }
