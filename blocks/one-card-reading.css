@@ -166,7 +166,7 @@
     content: '."'
 }
 
-@media screen and (min-width: 376px) and (max-width: 769px) {
+@media screen and (min-width: 380px) and (max-width: 769px) {
     .one-card-reading__card {
         animation: float 5s ease-in-out infinite;
         margin: 20px auto 10px;
