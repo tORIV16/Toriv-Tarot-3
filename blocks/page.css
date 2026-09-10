@@ -14,6 +14,7 @@ html {
 
 .page {
     position: relative;
+    margin: 25px;
 }
 
 .top-element {

@@ -1,9 +1,11 @@
 #content-area {
     display: flex;
+    position:sticky;
     flex-direction: column;
     justify-content: space-between;
     min-height: 370px;
     opacity: 1;
     transition: opacity 0.5s linear;
     width: 100%;
+    z-index: 20;
 }

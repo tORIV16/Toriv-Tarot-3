@@ -207,3 +207,23 @@
 .five-card-reading__card-insight--fortune-insight::after {
     content: '."'
 }
+
+
+@media screen and (min-width: 360px) and (max-width: 769px) {
+    
+    .five-card-reading__card-hand {
+        animation: float 20s ease-in-out infinite;
+    }
+    .five-card-reading__card-button {
+        margin: 20px auto 10px;
+    }
+
+    .five-card-reading__card-details {
+        font-size: clamp(1em, 5vw, 1.5em);
+    }
+
+    .five-card-reading__card-insight {
+        font-size: clamp(1em, 10vw, 2.25em);
+    }
+
+}

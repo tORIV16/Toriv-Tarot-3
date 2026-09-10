@@ -55,6 +55,7 @@
 
 .welcome-card__table {
     width: 70%;
+    height: 25px;
     margin: -23px auto 0;
     background-color: rgb(110, 150, 110);
     padding: 10px 0;
@@ -157,4 +158,29 @@
 
 .welcome-card__more-button:disabled {
     opacity: 0.25;
+}
+
+@media screen and (min-width: 360px) and (max-width: 769px) {
+    .welcome-card__title {
+        font-size: clamp(1.5em, 10vw, 3em );
+    }
+
+    .welcome-card__table {
+        height: 60px;
+        margin-top: -40px;
+    }
+
+    .welcome-card__decos--torch {
+        transform: scale(2);
+        margin: 20px;
+    }
+
+    .welcome-card__speech-bubble_title {
+        font-size: clamp(1em, 5vw, 1.5em);
+        height: 20px;
+    }
+
+    .welcome-card__speech-bubble_content {
+        font-size: clamp(1.25em, 20vw, 1.75em);
+    }
 }

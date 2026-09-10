@@ -12,7 +12,8 @@
         <link rel="icon" href="favicon.ico">
     </head>
     <!--      //----------- REMEMBER 360px MAX-WIDTH ----------- //       --> 
-    <!--      // ----------- MOBILE FIRST PRIORITY ------------ //       --> 
+    <!--      //---------- iPad SIZE 760px MAX-WIDTH ----------- //      -->
+    <!--      //----------- MOBILE FIRST PRIORITY ------------ //       --> 
     <body class="page">
 
         <section id="fullscreen-area" class="is__not-visible">
@@ -32,6 +33,10 @@
         
     <!-- --------------------------- MAIN -------------------------------- -->
         <main class="main">
+            <div class="main__background">
+                <div class="swirly-background swirly-background-1"></div>
+                <div class="swirly-background swirly-background-2"></div>
+            </div>
 
             <section  id="content-area">
 
@@ -70,7 +75,7 @@
                     <div class="welcome-card__decos--torch left"></div>
                     <div class="welcome-card__decos--torch right"></div>
                 </div>
-                <div class="welcome-card__table"><span class="top-element">🔮</span></div>
+                <div class="welcome-card__table"><p class="top-element">🔮</p></div>
                 <div class="welcome-card__speech-bubble">
                     <div class="welcome-card__speech-bubble_title"><p>Snoopy</p></div>
                     <div class="welcome-card__speech-bubble_content">
@@ -116,9 +121,19 @@
 
         <template id="card-selection-template">
             <div class="card-selection__container">
-                <button type="button" class="card-selection__card card-selection__card--gold">✨✨<br>3 Card Question<br>✨✨</button>
-                <button type="button" class="card-selection__card card-selection__card--emerald">✨<br>1 Card Question<br>✨</button>
-                <button type="button" class="card-selection__card card-selection__card--diamond">✨✨✨<br>5 Card Question<br>✨✨✨</button>
+                <div class="card-selection__button-container">
+                    <button type="button" class="card-selection__card card-selection__card--gold">✨✨<br>3 Card Question<br>✨✨</button>
+                    <button type="button" class="card-selection__card card-selection__card--emerald">✨<br>1 Card Question<br>✨</button>
+                    <button type="button" class="card-selection__card card-selection__card--diamond">✨✨✨<br>5 Card Question<br>✨✨✨</button>
+                </div>
+                
+            </div>
+        </template>
+
+        <template id="spiritual-guidance-template">
+            <div class="spiritual-guidance-selection__container">
+                <p>May Take a Little Longer</p>
+                <button type="button" class="spiritual-guidance-button">✨ Spiritual Guidance ✨</button>
             </div>
         </template>
 
@@ -156,6 +171,7 @@
                         This card comes to you when 
                         <span class="one-card-reading__card-insight--card-insight"></span>
                     </p>
+                    <div class="break"></div>
                     <p class="one-card-reading__card-insight--fortune">
                         The Universe is also urging me to tell you,
                         <br>
@@ -288,7 +304,50 @@
         </template>
 
 
-
+        <template id="spiritual-guidance-template">
+            <div class="spiritual-guidance__container">
+                <h2 class="spiritual-guidance__header">The Universe Has Provided You With...</h2>
+                <div class="spiritual-guidance__card-hand">
+                    <button class="spiritual-guidance__card-two spiritual-guidance__card-button">
+                        <img class="spiritual-guidance__card-image spiritual-guidance__card-two-image" alt="#" src="#">
+                    </button>
+                    <button class="spiritual-guidance__card-three spiritual-guidance__card-button">
+                        <img class="spiritual-guidance__card-image spiritual-guidance__card-three-image" alt="#" src="#">
+                    </button>
+                    <button class="spiritual-guidance__card-one spiritual-guidance__card-button">
+                        <img class="spiritual-guidance__card-image spiritual-guidance__card-one-image" alt="#" src="#">
+                    </button>
+                    <button class="spiritual-guidance__card-four spiritual-guidance__card-button">
+                        <img class="spiritual-guidance__card-image spiritual-guidance__card-four-image" alt="#" src="#">
+                    </button>
+                    <button class="spiritual-guidance__card-five spiritual-guidance__card-button">
+                        <img class="spiritual-guidance__card-image spiritual-guidance__card-five-image" alt="#" src="#">
+                    </button>
+                </div>
+                <div class="spiritual-guidance__card-details">
+                    <h3 class="spiritual-guidance__card-details--name"></h3>
+                    <div class="break"></div>
+                    <p class="spiritual-guidance__card-details--description"></p>
+                </div>
+                <div></div>
+                <div class="spiritual-guidance__card-insight">
+                    <div class="spiritual-guidance__card-insight--speaker">Snoopy</div>
+                    <div class="spiritual-guidance__card-insight--background__container">
+                        <div class="spiritual-guidance__card-insight--background"></div>
+                    </div>
+                    <p class="spiritual-guidance__card-insight--card">
+                        <p>
+                            ✨🌙✨
+                        </p>
+                        <span class="spiritual-guidance__card-insight--card-intro"></span>
+                        <span class="spiritual-guidance__card-insight--card-insight"></span>
+                        <p>
+                            ✨🔮✨
+                        </p>
+                    </p>
+                </div>
+            </div>
+        </template>
 
 
         <template id="card-focus-template">
@@ -300,7 +359,7 @@
                 </div>
             </div>
         </template>
-        <script src="script.js"></script>
-        <script src="scriptinfo.js"></script>
+        <script src="./scripts/script.js"></script>
+        <script src="./scripts/scriptinfo.js"></script>
     </body>
 </html>

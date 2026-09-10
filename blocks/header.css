@@ -1,20 +1,18 @@
-
-
 .header {
     box-sizing: border-box;
-    width: 100%;
+    position: fixed;
+    margin: 0 auto;
+    max-width: 300px;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
 }
 
 .header__container {
     box-sizing: border-box;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    width: 100%;
-    max-width: 300px;
     margin: 0 auto;
-    z-index: 9999;
+    width: 80%;
 }
 
 .header__logo {
@@ -50,4 +48,20 @@
                 1px -2px red,
                 -2px 3px yellow;
     cursor: pointer;
+}
+
+@media screen and (min-width: 360px) and (max-width: 769px) {
+    .header {
+        max-width: 500px;
+        margin: 0 auto;
+    }
+
+    .header__logo {
+
+    }
+
+    .header__logo-text {
+        animation: pulse-one 1s infinite ease-in-out;
+        font-size: clamp(1em, 5vw, 1.75em);
+    }
 }

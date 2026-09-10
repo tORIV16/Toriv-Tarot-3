@@ -10,6 +10,8 @@
     text-align: center;
     font-family: BadUnicorn;
     color: white;
+    width: 80%;
+    margin: 0 auto;
     padding-bottom: 15px;
     font-size: 2.5em;
     background-image: radial-gradient(#ffffff44, transparent, #ffffff44, transparent, transparent);
@@ -77,3 +79,19 @@
                     background-color: rgb(163, 108, 117);
                     box-shadow: 0 0 15px gold;
                 }
+
+@media screen and (min-width: 360px) and (max-width: 769px) {
+    .welcome-title {
+        font-size: clamp(2.5em, 10vw, 4em);
+    }
+
+    .welcome-title__deco {
+        transform: scale(2);
+        margin: 3em auto;
+    }
+
+    .welcome-title__decos--torch {
+        transform: scale(2.5);
+        margin: 0 20px;
+    }
+}

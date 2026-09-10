@@ -3,11 +3,63 @@
     z-index: 20;
     max-width: 290px;
     width: 100%;
-    background-color: rgba(76, 0, 130, 0.5);
+    min-height: 80vh;
     margin: 50px auto 10px;
     border-radius: 145px 145px 0 0;
     border: 15px outset rgb(159, 67, 14);
     box-shadow: 0 0 10px white,
             inset 0 0 10px rgba(42, 0, 72, 0.75);
     padding: 10px 0;
+    position: relative
+}
+
+.main__background {
+    border-radius: 145px 145px 0 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+    .swirly-background {
+        position: absolute;
+        filter: blur(5px);
+        height: 200%;
+        width: 200%;
+    }
+
+        .swirly-background-1 {
+            opacity: 0.4;
+            background-image:
+                conic-gradient(
+                    from var(--spin), purple, blue, orange, blue, purple
+                )
+            ;
+            animation: spin 25s linear infinite;
+        }
+
+        .swirly-background-2 {
+            opacity: 0.4;
+            transform: translate(-50%, -50%);
+            background-image:
+                conic-gradient(
+                    from var(--spin), rgb(53, 176, 165), rgb(0, 255, 4), rgb(206, 165, 160), rgb(123, 123, 180), rgb(53, 176, 165)
+                )
+            ;
+            animation: spin 10s linear infinite;
+        }
+
+@media screen and (min-width: 360px) and (max-width: 769px) {
+    .main {
+        margin-top: 14%;
+        max-width: 550px;
+        border-radius: 275px 275px 0 0;
+    }
+
+    .main__background {
+        border-radius: 275px 275px 0 0;
+
+    }
 }

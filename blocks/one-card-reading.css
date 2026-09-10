@@ -149,6 +149,10 @@
     margin-bottom: 10px;
 }
 
+.one-card-reading__card-insight--card {
+    font-size: 1.25em;
+}
+
 .one-card-reading__card-insight--fortune-insight {
     font-size: 1.5em;
     margin: 5px auto;
@@ -162,6 +166,18 @@
     content: '."'
 }
 
-@media screen and (min-width: 1024px) {
-    
+@media screen and (min-width: 360px) and (max-width: 769px) {
+    .one-card-reading__card {
+        animation: float 5s ease-in-out infinite;
+        margin: 20px auto 10px;
+    }
+
+    .one-card-reading__card-details {
+        font-size: clamp(1em, 5vw, 1.5em);
+    }
+
+    .one-card-reading__card-insight {
+        font-size: clamp(1em, 10vw, 2em);
+        padding: 30px 40px;
+    }
 }

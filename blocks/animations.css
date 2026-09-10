@@ -12,6 +12,17 @@
     }
 }
 
+@property --spin {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
+
+@keyframes spin {
+  0% { --spin: 0deg; }
+  100% { --spin: 360deg; }
+}
+
 @keyframes appear {
     0% {
         opacity: 0;
@@ -27,6 +38,15 @@
     }
     100% {
         opacity: 0;
+    }
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-5%);
     }
 }
 
