@@ -21,6 +21,7 @@
     margin: 10px auto;
     background: none;
     border: none;
+    animation: float 5s ease-in-out infinite;
 }
 
 .one-card-reading__card-image {
@@ -168,7 +169,6 @@
 
 @media screen and (min-width: 420px) and (max-width: 769px) {
     .one-card-reading__card {
-        animation: float 5s ease-in-out infinite;
         margin: 20px auto 10px;
     }
 
