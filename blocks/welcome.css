@@ -80,7 +80,7 @@
                     box-shadow: 0 0 15px gold;
                 }
 
-@media screen and (min-width: 360px) and (max-width: 769px) {
+@media screen and (min-width: 376px) and (max-width: 769px) {
     .welcome-title {
         font-size: clamp(2.5em, 10vw, 4em);
     }
