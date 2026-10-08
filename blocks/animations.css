@@ -46,7 +46,7 @@
         transform: translateY(0);
     }
     50% {
-        transform: translateY(-5%);
+        transform: translateY(5%);
     }
 }
 
@@ -93,6 +93,36 @@
     100% {
         transform: scale(1);
         opacity: 1;
+    }
+}
+
+@keyframes glowing {
+    0% {
+        box-shadow: 0 0 5px white;
+    }
+    50% {
+        box-shadow: 0 0 35px white;
+    }
+    100% {
+        box-shadow: 0 0 5px white;
+    }
+}
+
+@keyframes wiggle {
+    0% {
+        transform: rotate(0deg);
+    }
+    33% {
+        transform: rotate(-10deg);
+    }
+    0% {
+        transform: rotate(10deg);
+    }
+    0% {
+        transform: rotate(-10deg);
+    }
+    0% {
+        transform: rotate(0deg);
     }
 }
 

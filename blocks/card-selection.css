@@ -1,7 +1,7 @@
 .card-selection__container {
     width: 100%;
     min-height: 150px;
-    animation: float 10s ease-in-out infinite;
+    animation: float 10s linear infinite;
 }
 
 .card-selection__button-container {
@@ -10,7 +10,8 @@
     display: flex;
     justify-content: center;
     transform: translateY(-40px) rotateX(-10deg);
-
+    height: 100%;
+    margin: 0.25em auto 0;
 }
 
 .card-selection__card {
@@ -18,7 +19,7 @@
     width: 75px;
     height: 120px;
     box-sizing: border-box;
-    box-shadow: 0 0 2px white;
+    animation: glowing 2s linear infinite;
     cursor: pointer;
     border-radius: 3px;
     font-family: Carima;
@@ -40,6 +41,7 @@
 }
 
 .card-selection__card--emerald:hover {
+    transform: translateZ(270px);
     border: 2px solid rgb(0, 168, 0);
     background-image: linear-gradient(45deg, rgb(0, 168, 0), rgb(162, 255, 162), rgb(0, 168, 0));
 }
@@ -56,6 +58,7 @@
 }
 
 .card-selection__card--gold:hover {
+    transform: rotateY(-20deg) translateZ(270px);
     border: 2px solid rgb(196, 173, 0);
     background-image: linear-gradient(45deg, rgb(196, 173, 0), rgb(255, 255, 124), rgb(196, 173, 0));
 }
@@ -72,6 +75,7 @@
 }
 
 .card-selection__card--diamond:hover {
+    transform: rotateY(20deg) translateZ(270px);
     border: 2px solid rgb(29, 209, 209);
     background-image: linear-gradient(45deg, rgb(29, 209, 209), rgb(172, 254, 255), rgb(29, 209, 209));
 }
@@ -89,7 +93,7 @@
 
     .card-selection__card {
         border-radius: 9px;
-        border-width: 7px;
+        border-width: 5px;
         height: 240px;
         width: 150px;
         font-size: clamp(1em, 5vw, 2em);
@@ -99,15 +103,30 @@
         transform: translateZ(500px);
     }
 
+    .card-selection__card--emerald:hover {
+        transform: translateZ(520px);
+        border-width: 5px;
+    }
+
     
 
     .card-selection__card--gold {
         transform: rotateY(-20deg) translateZ(500px);
     }
 
+    .card-selection__card--gold:hover {
+        transform: rotateY(-20deg) translateZ(520px);
+        border-width: 5px;
+    }
+
     
 
     .card-selection__card--diamond {
         transform: rotateY(20deg) translateZ(500px);
+    }
+
+    .card-selection__card--diamond:hover {
+        transform: rotateY(20deg) translateZ(520px);
+        border-width: 5px;
     }
 }

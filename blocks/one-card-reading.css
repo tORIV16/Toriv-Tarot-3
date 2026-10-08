@@ -18,10 +18,11 @@
 
 .one-card-reading__card {
     width: 33%;
-    margin: 10px auto;
+    margin: 2.5em auto 1.5em;
     background: none;
     border: none;
-    animation: float 5s ease-in-out infinite;
+    border-radius: 6.66px;
+    animation: float 3s ease-in-out infinite, glowing 2s linear infinite;
 }
 
 .one-card-reading__card-image {
@@ -169,7 +170,6 @@
 
 @media screen and (min-width: 420px) {
     .one-card-reading__card {
-        margin: 20px auto 10px;
     }
 
     .one-card-reading__card-details {

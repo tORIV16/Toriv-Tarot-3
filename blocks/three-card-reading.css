@@ -19,11 +19,13 @@
 
 .three-card-reading__card-hand {
     display: flex;
+    width: 100%;
     justify-content: center;
     align-items: center;
     position: relative;
     box-sizing: border-box;
-    margin: 10px;
+    margin: 1em auto;
+    animation: float 3s ease-in-out infinite;
 }
 
 .three-card-reading__card-button {
@@ -32,6 +34,8 @@
     background: none;
     box-sizing: border-box;
     border: none;
+    border-radius: 6.66px;
+    animation: glowing 2s linear infinite;
 }
 
 .three-card-reading__card-one {
@@ -197,10 +201,9 @@
 
 @media screen and (min-width: 420px) {
     .three-card-reading__card-hand {
-        animation: float 20s ease-in-out infinite;
+        margin-bottom: 1.5em;
     }
     .three-card-reading__card-button {
-        margin: 20px auto 10px;
     }
 
     .three-card-reading__card-details {
